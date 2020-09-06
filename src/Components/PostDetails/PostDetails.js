@@ -37,10 +37,10 @@ const PostDetails = () => {
                                     <h3>{posts.body}</h3>
                                </Box>
                          
-                         <div style={{ width: '100%',marginBottom:'',marginTop:'10px' }}>
-                            <Box display="flex" p={0} marginBottom='' marginTop ='15px' bgcolor="black" borderRadius='10px' marginRight='900px' >
-                                <h3 >{comment.length} Comments.</h3>
-                            </Box>
+                           <div style={{ width: '100%',marginBottom:'',marginTop:'10px' }}>
+                                <Box display="flex" p={0} marginBottom='' marginTop ='15px' bgcolor="black" borderRadius='10px' marginRight='900px' >
+                                    <h3 >{comment.length} Comments.</h3>
+                                </Box>
                          </div>
                          {
                             comment.map(comment => <Comment comment={comment}></Comment>)

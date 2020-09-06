@@ -8,6 +8,7 @@ import {
 import './App.css';
 import Home from './Components/Home/Home';
 import PostDetails from './Components/PostDetails/PostDetails';
+import NoMatch from './Components/NoMatch/NoMatch';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
         <Route exact path="/">
           <Home/>
         </Route>
+        <Route path="*">
+            <NoMatch/>
+          </Route>
       </Switch>
     </Router>
   );
